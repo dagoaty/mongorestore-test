@@ -1,8 +1,8 @@
 # mongorestore-verify
-A simple container which uses mongorestore to load a mongo dump into a fresh database.
+A simple container which uses mongorestore to load a mongodump and error if it fails.
 
 ## Usage
-`docker run -v ${DUMPDIR}:/mongodump dagoaty/mongorestore-test`
+`docker run -v ${DUMPDIR}:/mongodump dagoaty/mongorestore-verify`
 
 ## Returns
 * Success returns silently
